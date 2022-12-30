@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(65, 160, 197);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 10px;
+}
+
+h2 {
+    display: none;
+    transition: .5s linear;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.end {
+    display: block;
+    color: orange;
+    transform: scale(1.2);
+}
+
+.cup {
+    background-color: white;
+    color: navy;
+    border: 4px solid navy;
+    border-radius: 0 0 40px 40px;
+    height: 300px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cup.cup-small {
+    position: relative;
+    height: 90px;
+    width: 55px;
+    border-width: 3px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(255, 255, 255, .9);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.cup.cup-small p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.cup.cup-small.full {
+    background-color: skyblue;
+}
+
+.cup.cup-small img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    opacity: .8;
+    z-index: 0;
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    transition: .3s ease;
+}
+
+.remained span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: skyblue;
+    height: 0;
+    transition: .3s ease;
+}
+
+.text {
+    text-align: center;
+    margin: 30px;
+}
+
+@media (max-width: 540px){
+    h2 {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .text {
+        margin: 15px;
+    }
+}
