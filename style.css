@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
 * {
     margin: 0;
@@ -7,9 +7,10 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(65, 160, 197);
+    font-family: 'Delicious Handrawn', cursive;
+    background-color: #63afec;
     color: white;
+    text-align: center;
 }
 
 .container {
@@ -17,30 +18,39 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 h1 {
-    margin: 10px 0 0 0;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 h3 {
+    font-size: 2rem;
     font-weight: 400;
     margin: 10px;
 }
 
+.congratulations-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h2 {
+    width: 70vw;
+    height: 8vh;
     display: none;
     transition: .5s linear;
     text-align: center;
-    margin: 20px 0;
 }
 
 .end {
     display: block;
-    color: orange;
+    font-size: 2rem;
+    color: #ecbc63;
     transform: scale(1.2);
 }
 
@@ -64,7 +74,7 @@ h2 {
     border-width: 3px;
     border-radius: 0 0 20px 20px;
     background-color: rgba(255, 255, 255, .9);
-    font-size: 12px;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
     line-height: 70px;
@@ -113,12 +123,12 @@ h2 {
 }
 
 .remained span {
-    font-size: 25px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .remained small {
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .percentage {
@@ -133,14 +143,23 @@ h2 {
 }
 
 .text {
+    font-size: 2rem;
     text-align: center;
     margin: 30px;
+}
+
+.background-img{
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
 }
 
 @media (max-width: 540px){
     h2 {
         font-size: 1rem;
-        margin: 10px 0;
     }
 
     .text {
