@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Righteous', cursive;
     background-color: #63afec;
     color: #ffffff;
     text-align: center;
@@ -23,6 +23,7 @@ body {
 .container {
     flex-direction: column;
     height: 100vh;
+    margin-top: -3rem;
 }
 
 h1 {
@@ -55,6 +56,7 @@ h2 {
     background-color: #ffffff;
     color: #000080;
     border: 4px solid #000080;
+    box-shadow: 5px 5px 5px #000080ad;
     border-radius: 0 0 40px 40px;
     height: 300px;
     width: 180px;
@@ -88,7 +90,7 @@ h2 {
 }
 
 .cup.cup-small p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     z-index: 1;
 }
 

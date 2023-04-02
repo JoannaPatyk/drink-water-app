@@ -1,9 +1,9 @@
-function create_cup(): void {
+function createCup(): void {
     let container: HTMLElement = document.querySelector('.cups');
 
     for (let i = 0; i < 8; i++) {
-        const newElement = document.createElement('div');
-        newElement.classList.add('cup', 'cup-small');
+        const newCup = document.createElement('div');
+        newCup.classList.add('cup', 'cup-small');
 
         const newParagraph = document.createElement('p');
         newParagraph.textContent = '250 ml';
@@ -12,38 +12,37 @@ function create_cup(): void {
         newImage.setAttribute('src', 'img/waterdrop.png');
         newImage.setAttribute('alt', '');
 
-        newElement.appendChild(newParagraph);
-        newElement.appendChild(newImage);
+        newCup.appendChild(newParagraph);
+        newCup.appendChild(newImage);
 
-        container.appendChild(newElement);
+        container.appendChild(newCup);
     }
 }
 
-create_cup();
+createCup();
 
-const small_cups: NodeListOf<Element> = document.querySelectorAll('.cup-small');
-console.log(small_cups);
+const smallCups: NodeListOf<Element> = document.querySelectorAll('.cup-small');
 const listers: HTMLDivElement = document.querySelector('#listers');
 const percentage: HTMLDivElement = document.querySelector('.percentage');
 const remained: HTMLDivElement = document.querySelector('.remained');
 const drops: NodeListOf<HTMLImageElement> = document.querySelectorAll('img');
 const animationText: HTMLHeadingElement = document.querySelector('h2');
 
-small_cups.forEach((cup: Element, index: number) => {
+smallCups.forEach((cup: Element, index: number) => {
     cup.addEventListener('click', () => {
-        highlight_cups(index);
+        highlightCups(index);
     });
 });
 
-function highlight_cups(index: number): void {
+function highlightCups(index: number): void {
     if (
-        small_cups[index].classList.contains('full') &&
-        !small_cups[index].nextElementSibling.classList.contains('full')
+        smallCups[index].classList.contains('full') &&
+        !smallCups[index].nextElementSibling.classList.contains('full')
     ) {
         index--;
     }
 
-    small_cups.forEach((cup: Element, index2: number) => {
+    smallCups.forEach((cup: Element, index2: number) => {
         if (index2 <= index) {
             cup.classList.add('full');
         } else {
@@ -59,12 +58,12 @@ function highlight_cups(index: number): void {
         }
     });
 
-    update_big_cup();
+    updateBigCup();
 }
 
-function update_big_cup(): void {
+function updateBigCup(): void {
     const fullCups = document.querySelectorAll('.cup-small.full').length;
-    const totalCups = small_cups.length;
+    const totalCups = smallCups.length;
 
     if (fullCups === 0) {
         percentage.style.visibility = 'hidden';

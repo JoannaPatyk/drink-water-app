@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200"
+        />
         <link rel="stylesheet" href="src/style.css" />
         <title>Drink Water Tracker</title>
     </head>
-
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-        }
-    </style>
 
     <body>
         <div class="container">
@@ -26,13 +24,19 @@
                 </div>
                 <div class="percentage" id="percentage"></div>
             </div>
-            <p class="text">Choose how many glasses of water you drank today:</p>
+            <p class="text">How many glasses of water you drank today:</p>
             <div class="cups">
                 <div class="small-cup"></div>
             </div>
         </div>
         <div class="congratulations-container">
-            <h2>Well done! You drank enough water today!</h2>
+            <h2>
+                <span class="material-symbols-outlined"> favorite </span>
+                Well done
+                <span class="material-symbols-outlined"> favorite </span>
+                <br />
+                You drank enough water today!
+            </h2>
         </div>
         <img src="img/bg.png" alt="" class="background-img" />
         <script src="/dist/script.js"></script>
