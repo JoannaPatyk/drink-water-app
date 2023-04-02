@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Drink Water Tracker</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+        <link rel="stylesheet" href="src/style.css" />
+        <title>Drink Water Tracker</title>
+    </head>
 
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-    }
-  </style>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+    </style>
 
-  <body>
-    <div class="container">
-      <h1>Drinking Water Tracking</h1>
-      <h3>Goal: 2 liters</h3>
-      <div class="cup">
-        <div class="remained" id="remained">
-          <span id="listers"></span>
-          <small>Remained</small>
+    <body>
+        <div class="container">
+            <h1>Drinking Water Tracking</h1>
+            <h3>Goal: 2 liters</h3>
+            <div class="cup">
+                <div class="remained" id="remained">
+                    <span id="listers"></span>
+                    <small>Remained</small>
+                </div>
+                <div class="percentage" id="percentage"></div>
+            </div>
+            <p class="text">Choose how many glasses of water you drank today:</p>
+            <div class="cups">
+                <div class="small-cup"></div>
+            </div>
         </div>
-        <div class="percentage" id="percentage"></div>
-      </div>
-      <p class="text">Choose how many glasses of water you drank today:</p>
-      <div class="cups">
-        <div class="small-cup"></div>
-      </div>
-    </div>
-    <div class="congratulations-container">
-      <h2>Well done! You drank enough water today!</h2>
-    </div>
-    <img src="img/bg.png" alt="" class="background-img" />
-    <script src="/dist/script.js"></script>
-  </body>
+        <div class="congratulations-container">
+            <h2>Well done! You drank enough water today!</h2>
+        </div>
+        <img src="img/bg.png" alt="" class="background-img" />
+        <script src="/dist/script.js"></script>
+    </body>
 </html>

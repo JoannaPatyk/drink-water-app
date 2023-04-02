@@ -1,9 +1,12 @@
 {
-  "dependencies": {
-    "typescript": "^5.0.3"
-  },
-  "scripts": {
-    "compile": "tsc",
-    "compile-watch": "tsc --watch"
-  }
+    "dependencies": {
+        "prettier": "^2.8.7",
+        "typescript": "^5.0.3"
+    },
+    "scripts": {
+        "compile": "tsc",
+        "compile-watch": "tsc --watch",
+        "prettier-check": "npx prettier --check .",
+        "prettier-fix": "npx prettier --write ."
+    }
 }
