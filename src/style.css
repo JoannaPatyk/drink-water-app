@@ -41,17 +41,17 @@ h3 {
 
 h2 {
     width: 70vw;
-    height: 8vh;
     display: none;
-    transition: .5s linear;
+    transition: .5s;
     text-align: center;
 }
 
 .end {
     display: block;
-    font-size: 2rem;
-    color: #ecbc63;
+    font-size: 2.5rem;
+    color: #BA38A9;
     transform: scale(1.2);
+    margin-top: -3rem;
 }
 
 .cup {
@@ -59,8 +59,8 @@ h2 {
     color: navy;
     border: 4px solid navy;
     border-radius: 0 0 40px 40px;
-    height: 300px;
-    width: 150px;
+    height: 400px;
+    width: 200px;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -69,15 +69,15 @@ h2 {
 
 .cup.cup-small {
     position: relative;
-    height: 90px;
-    width: 55px;
+    height: 100px;
+    width: 70px;
     border-width: 3px;
     border-radius: 0 0 20px 20px;
     background-color: rgba(255, 255, 255, .9);
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-    line-height: 70px;
+    line-height: 100px;
     margin: 5px;
     cursor: pointer;
     transition: .3s ease;
@@ -87,11 +87,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.6rem;
     z-index: 1;
 }
 
 .cup.cup-small.full {
-    background-color: skyblue;
+    background-color: #87ceeb;
 }
 
 .cup.cup-small img {
@@ -107,7 +108,7 @@ h2 {
 .cups {
     display: flex;
     flex-wrap: wrap;
-    width: 280px;
+    width: 380px;
     justify-content: center;
     align-items: center;
 }
@@ -137,7 +138,7 @@ h2 {
     align-items: center;
     font-weight: bold;
     font-size: 30px;
-    background-color: skyblue;
+    background-color: #87ceeb;
     height: 0;
     transition: .3s ease;
 }
@@ -155,6 +156,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 95%;
+    z-index: -100;
 }
 
 @media (max-width: 540px){

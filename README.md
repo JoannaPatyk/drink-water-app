@@ -3,7 +3,7 @@
 Drink Water App is a simple web application that helps track the amount of water consumed in a day. The application was built using HTML, CSS, and JavaScript technologies.
 ## Quick setup and start
 
-In order to run webpage you need HTTP sever which serve the site, for example [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Firstly compile with `npm run compile`. Then, in order to run webpage you need HTTP sever which serve the site, for example [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 ## How to use the app
 
@@ -18,6 +18,6 @@ Once the website is open, enter the amount of water you drink into the picture o
 
 The application was built using the following technologies:
 
-* HTML
-* CSS
-* JavaScript
+-   HTML
+-   CSS
+-   TypeScript
