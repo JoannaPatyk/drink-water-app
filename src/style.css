@@ -20,10 +20,13 @@ body {
     justify-content: center;
 }
 
+.congratulations-container {
+    height: 15vh;
+}
+
 .container {
     flex-direction: column;
-    height: 100vh;
-    margin-top: -3rem;
+    height: 80vh;
 }
 
 h1 {
@@ -45,9 +48,8 @@ h2 {
 .end {
     display: block;
     font-size: 2.5rem;
-    color: #ba38a9;
+    color: #b06b00;
     transform: scale(1.2);
-    margin-top: -15rem;
 }
 
 .cup {
@@ -148,7 +150,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 95%;
+    height: 90%;
     z-index: -100;
     opacity: 0.2;
 }
